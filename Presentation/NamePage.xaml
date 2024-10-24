@@ -1,0 +1,36 @@
+﻿<Page x:Class="Congressional_App_Test1.Presentation.NamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Congressional_App_Test1.Presentation"
+      xmlns:modernWpf="clr-namespace:ModernWpf.Controls;assembly=ModernWpf"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
+      Title="NamePage">
+
+    <Grid>
+
+        <ui:ToggleSwitch
+                        x:Name="toggleSwitch"
+                        Header="Save Data?"
+                        OnContent="Saving Data"
+                        OffContent="Discarding Data"
+                        IsOn="True" HorizontalAlignment="Center" Margin="0,0,0,30" VerticalAlignment="Bottom" />
+        <Viewbox VerticalAlignment="Top" Height ="47" Width="530" Margin="135,150,135,0">
+            <RichTextBox
+                    x:Name="tb"
+                    ui:ControlHelper.PlaceholderText="Please enter your name here"
+                    AcceptsReturn="False"
+                    SelectionBrush="Green"
+                    AutomationProperties.Name="multi-line TextBox"
+                    SpellCheck.IsEnabled="False"
+                    Width="270"
+                    Height="Auto" FontFamily="Yu Gothic UI Light" />
+        </Viewbox>
+        <Button Content="Continue" Click="onClick" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="196" FontSize="19" Margin="0,210,0,0"/>
+
+        <TextBlock x:Name="Starstag" TextAlignment="Center" Text="Welcome Back" FontSize="60" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,63,0,0" Height="68" Width="319" FontFamily="Freestyle Script"/>
+    </Grid>
+</Page>

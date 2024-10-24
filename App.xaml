@@ -1,0 +1,128 @@
+﻿<Application x:Class="Congressional_App_Test1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Congressional_App_Test1"
+             xmlns:ui="http://schemas.modernwpf.com/2019"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ui:ThemeResources />
+                <ui:XamlControlsResources />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+            <Style x:Key="fv1">
+                <Setter Property="Control.Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Control}">
+                            <Grid Margin="3 2">
+                                <Rectangle Name="r1" StrokeThickness="1" Stroke="Black" StrokeDashArray="2 2"/>
+                                <Border Name="border" Width="{TemplateBinding ActualWidth}" Height="{TemplateBinding ActualHeight}"  CornerRadius="2" BorderThickness="1" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="b1" TargetType="Button">
+                <!-- Style the buttons -->
+                <Setter Property="Control.Foreground" Value="White" />
+                <Setter Property="Control.Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF22203F" Offset="0.139"/>
+                            <GradientStop Color="#FF04030C" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="buttonBorder" CornerRadius="10" 
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="#FF564747" 
+                        BorderThickness="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <!-- Trigger for hover effect -->
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="buttonBorder" Property="Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="#FF8D92B3" />
+                                            <!-- Light highlight color -->
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <!-- Trigger for click effect -->
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="buttonBorder" Property="Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="White" />
+                                            <!-- Flash to white -->
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Control.Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="White" />
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- TextBox Style Resource -->
+            <Style x:Key="tb1" TargetType="TextBox">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="TextBox">
+                            <Grid>
+                                <!-- TextBox Content -->
+                                <Border CornerRadius="10" 
+                            Background="{TemplateBinding Background}" 
+                            BorderThickness="2">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                    <!-- Fixed Style for Border -->
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <!-- Default BorderBrush value -->
+                                            <Setter Property="BorderBrush" Value="#FF3B96DC"/>
+                                            <!-- Trigger on Text property -->
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}" Value="">
+                                                    <Setter Property="BorderBrush" Value="White"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+                                </Border>
+
+                                <!-- Placeholder TextBlock -->
+                                <TextBlock IsHitTestVisible="False" Text="Search by zip" 
+                               VerticalAlignment="Center" HorizontalAlignment="Left" 
+                               Margin="10,0,0,0" Foreground="DarkGray">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}" Value="">
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

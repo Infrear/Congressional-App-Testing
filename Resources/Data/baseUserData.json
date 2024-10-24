@@ -1,0 +1,13 @@
+{
+  "Visits": {
+    "station 5": {
+      "Date": "20/10/2024",
+      "Time": "03:05:39",
+      "pH": "6",
+      "DissolvedOxygen": "Fair",
+      "StationNumber": "12345"
+    }
+  },
+  "Name": "",
+  "Stars": "1000"
+}
