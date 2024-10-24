@@ -1,0 +1,191 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+	  <!--<TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>-->
+	  <TargetFramework>net8.0-windows10.0.18362.0</TargetFramework>
+    <RootNamespace>Congressional_App_Test1</RootNamespace>
+    <Nullable>enable</Nullable>
+	<!--<DisableWinExeOutputInference>true</DisableWinExeOutputInference>-->
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Data\baseACoords.json" />
+    <None Remove="Resources\Data\baseAnimalData.json" />
+    <None Remove="Resources\Data\baseUserData.json" />
+    <None Remove="Resources\Data\Directions.json" />
+    <None Remove="Resources\Data\finds.json" />
+    <None Remove="Resources\Images\Animal Images\American Toad.jpg" />
+    <None Remove="Resources\Images\Animal Images\Bald Eagle.png" />
+    <None Remove="Resources\Images\Animal Images\Bengal Tiger.png" />
+    <None Remove="Resources\Images\Animal Images\Blue Whale.png" />
+    <None Remove="Resources\Images\Animal Images\Cheetah.png" />
+    <None Remove="Resources\Images\Animal Images\Chimpanzee.png" />
+    <None Remove="Resources\Images\Animal Images\Elephant.png" />
+    <None Remove="Resources\Images\Animal Images\Emperor Penguin.png" />
+    <None Remove="Resources\Images\Animal Images\Giraffe.png" />
+    <None Remove="Resources\Images\Animal Images\Great Horned Owl.png" />
+    <None Remove="Resources\Images\Animal Images\Great White.png" />
+    <None Remove="Resources\Images\Animal Images\Green Sea Turtle.png" />
+    <None Remove="Resources\Images\Animal Images\Hippopotamus.png" />
+    <None Remove="Resources\Images\Animal Images\Jaguar.jpg" />
+    <None Remove="Resources\Images\Animal Images\kangaroo.png" />
+    <None Remove="Resources\Images\Animal Images\Komodo Dragon.png" />
+    <None Remove="Resources\Images\Animal Images\Lion.png" />
+    <None Remove="Resources\Images\Animal Images\Ostrich.png" />
+    <None Remove="Resources\Images\Animal Images\Pink Dolphin.png" />
+    <None Remove="Resources\Images\Animal Images\Polar Bear.png" />
+    <None Remove="Resources\Images\Animal Images\Puffin.png" />
+    <None Remove="Resources\Images\Animal Images\Racoon.png" />
+    <None Remove="Resources\Images\Animal Images\Red Fox.png" />
+    <None Remove="Resources\Images\Animal Images\Sloth.png" />
+    <None Remove="Resources\Images\Animal Images\Snow Leopard.png" />
+    <None Remove="Resources\Images\Animal Images\Zebra.png" />
+    <None Remove="Resources\Images\mapper.png" />
+    <None Remove="Resources\Images\mapper2.png" />
+    <None Remove="Resources\Images\mapper3.png" />
+    <None Remove="Resources\Images\Map\glass.png" />
+    <None Remove="Resources\Images\Map\mapper.png" />
+    <None Remove="Resources\Images\Map\mapper2.png" />
+    <None Remove="Resources\Images\Map\mapper3.png" />
+    <None Remove="Resources\Images\Map\pointer.png" />
+    <None Remove="Resources\Images\Misc\star.png" />
+    <None Remove="Resources\Images\Misc\userprofile.jpg" />
+    <None Remove="Resources\Images\US MAP Blu.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Data\baseAnimalData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Data\Directions.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Data\finds.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Data\baseUserData.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Data\baseACoords.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\Images\Animal Images\Bald Eagle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Bengal Tiger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Blue Whale.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Cheetah.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Chimpanzee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Emperor Penguin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Giraffe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Great White.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Green Sea Turtle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Hippopotamus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\kangaroo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Komodo Dragon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Ostrich.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Pink Dolphin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Polar Bear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Puffin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Racoon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Sloth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Snow Leopard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Zebra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Misc\star.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV.Bitmap" Version="4.9.0.5494" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.9.0.5494" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.66" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="7.0.1" />
+    <!--<PackageReference Include="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="6.1.2" />-->
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="8.0.8" />
+    <PackageReference Include="ModernWpfUI" Version="0.9.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
+    <PackageReference Include="YoloDotNet" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\Animal Images\American Toad.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Elephant.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Great Horned Owl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Jaguar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Lion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Animal Images\Red Fox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Map\glass.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Map\mapper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Map\mapper2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Map\mapper3.png" />
+    <Resource Include="Resources\Images\Map\pointer.png" />
+    <Resource Include="Resources\Images\Misc\userprofile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+</Project>

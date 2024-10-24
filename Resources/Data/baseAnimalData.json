@@ -1,0 +1,132 @@
+{
+  "Lion": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Lion.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Savannahs, grasslands, and woodlands"
+  },
+  "Jaguar": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Jaguar.jpg",
+    "Rarity": "Common",
+    "HabitatDescription": "Rainforests and savannahs"
+  },
+  "Fox": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Red Fox.png",
+    "Rarity": "Common",
+    "HabitatDescription": "Forests, grasslands, mountains, and deserts"
+  },
+  "Elephant": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Elephant.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Grasslands and forests"
+  },
+  "Owl": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Great Horned Owl.png",
+    "Rarity": "Uncommon",
+    "HabitatDescription": "Forests, grasslands, and urban areas"
+  },
+  "Toad": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/American Toad.jpg",
+    "Rarity": "Uncommon",
+    "HabitatDescription": "Wetlands and gardens"
+  },
+  "Zebra": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Zebra.png",
+    "Rarity": "Common",
+    "HabitatDescription": "Savannahs and grasslands"
+  },
+  "Snow Leopard": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Snow Leopard.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Mountain ranges and snowy regions"
+  },
+  "Sloth": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Sloth.png",
+    "Rarity": "Uncommon",
+    "HabitatDescription": "Tropical rainforests"
+  },
+  "Racoon": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Racoon.png",
+    "Rarity": "Common",
+    "HabitatDescription": "Urban areas and forests"
+  },
+  "Puffin": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Puffin.png",
+    "Rarity": "Uncommon",
+    "HabitatDescription": "Coastal areas and islands"
+  },
+  "Polar Bear": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Polar Bear.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Arctic regions and sea ice"
+  },
+  "Pink Dolphin": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Pink Dolphin.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Freshwater rivers and coastal waters"
+  },
+  "Ostrich": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Ostrich.png",
+    "Rarity": "Common",
+    "HabitatDescription": "Savannahs and open grasslands"
+  },
+  "Komodo Dragon": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Komodo Dragon.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Tropical forests and savannahs"
+  },
+  "Kangaroo": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/kangaroo.png",
+    "Rarity": "Common",
+    "HabitatDescription": "Grasslands and forests"
+  },
+  "Hippopotamus": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Hippopotamus.png",
+    "Rarity": "Uncommon",
+    "HabitatDescription": "Rivers, lakes, and swamps"
+  },
+  "Green Sea Turtle": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Green Sea Turtle.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Tropical and subtropical oceans"
+  },
+  "Great White": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Great White.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Coastal and oceanic waters"
+  },
+  "Giraffe": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Giraffe.png",
+    "Rarity": "Common",
+    "HabitatDescription": "Savannahs and open woodlands"
+  },
+  "Emperor Penguin": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Emperor Penguin.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Antarctic coasts and sea ice"
+  },
+  "Chimpanzee": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Chimpanzee.png",
+    "Rarity": "Uncommon",
+    "HabitatDescription": "Tropical rainforests and savannahs"
+  },
+  "Cheetah": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Cheetah.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Savannahs and grasslands"
+  },
+  "Blue Whale": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Blue Whale.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Oceans and seas"
+  },
+  "Bengal Tiger": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Bengal Tiger.png",
+    "Rarity": "Rare",
+    "HabitatDescription": "Tropical rainforests and grasslands"
+  },
+  "Bald Eagle": {
+    "ImageUriSource": "pack://application:,,,/Resources/Images/Animal Images/Bald Eagle.png",
+    "Rarity": "Uncommon",
+    "HabitatDescription": "Forests, mountains, and near water"
+  }
+}

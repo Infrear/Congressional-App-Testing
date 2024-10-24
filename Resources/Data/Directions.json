@@ -1,0 +1,27 @@
+{
+  "Habitats Dirs": [
+    "California Quail",
+    "Crested Caracara",
+    "Common Loon",
+    "American Marten",
+    "Brush Rabbit",
+    "Bobcat",
+    "Texas Horned Lizard",
+    "Western Diamond-backed Rattlesnake",
+    "Texas Threadsnake",
+    "Siskiyou Mountains Salamander",
+    "Texas Blind Salamander",
+    "Wood Frog",
+    "White Bass",
+    "Walleye",
+    "Yellowfin Tuna"
+  ], // habitats to look for and plot
+
+  "Water Dirs": 50, // amount of random stations to pick and plot before stopping
+
+  "Rarity Stars": {
+    "Common": 100,
+    "Uncommon": 300,
+    "Rare": 1000
+  }
+}

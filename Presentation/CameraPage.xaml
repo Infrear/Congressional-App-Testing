@@ -1,0 +1,41 @@
+﻿<Page x:Class="Congressional_App_Test1.Presentation.CameraPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Congressional_App_Test1.Presentation"
+      xmlns:ui="http://schemas.modernwpf.com/2019"
+      xmlns:modernWpf="clr-namespace:ModernWpf.Controls;assembly=ModernWpf"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CameraPage">
+
+    <Grid Height="413">
+        <Image x:Name="WebCamImage" Width="640" Stretch="Fill" Margin="0,0,0,53" Height="400" />
+        
+        <Button Content="Analyze Photo" x:Name="ab" Click="CaptureButton_Click" HorizontalAlignment="Center" Margin="0,330,0,0" VerticalAlignment="Top" Visibility="Collapsed" />
+        <Button Content="Start Video" Click="StartButton_Click" Margin="259,362,0,0" VerticalAlignment="Top" />
+        <Button Content="Stop Video" Click="StopButton_Click" Margin="455,362,0,0" VerticalAlignment="Top" />
+
+
+        <TextBlock x:Name="tx" TextAlignment="Center" Text="Lion" FontSize="60" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,63,0,0" Height="68" Width="319" FontFamily="Book Antiqua" 
+                   Visibility="Collapsed"/>
+
+        <Viewbox x:Name="vb" VerticalAlignment="Top" Height ="47" Width="530" Margin="135,150,135,0" Visibility="Collapsed">
+            <RichTextBox
+                    x:Name="tb"
+                    ui:ControlHelper.PlaceholderText="Enter Location"
+                    AcceptsReturn="False"
+                    SelectionBrush="Green"
+                    AutomationProperties.Name="multi-line TextBox"
+                    SpellCheck.IsEnabled="True"
+                    Width="270"
+                    Height="Auto" FontFamily="Yu Gothic UI Light" />
+        </Viewbox>
+        
+        <Button x:Name ="cb" Content="Save" Click="Button_Click2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="196" FontSize="19" Margin="0,210,0,0" Visibility="Collapsed"/>
+
+        <Button Content="&lt;" Click="GoBack" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="68" FontSize="19"/>
+        
+    </Grid>
+</Page>

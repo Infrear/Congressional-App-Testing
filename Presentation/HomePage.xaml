@@ -1,0 +1,87 @@
+﻿<Page x:Class="Congressional_App_Test1.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Congressional_App_Test1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+    <Page.Resources>
+        <!-- Color palette -->
+        <SolidColorBrush x:Key="PrimaryColor" Color="#1E1E1E"/>
+        <SolidColorBrush x:Key="AccentColor" Color="#FF6200EE"/>
+        <SolidColorBrush x:Key="HoverBackgroundColor" Color="#333333"/>
+        <!-- Darker gray on hover -->
+        <SolidColorBrush x:Key="HoverForegroundColor" Color="#FFFFFF"/>
+        <!-- White text on hover -->
+        <SolidColorBrush x:Key="TextColor" Color="#E0E0E0"/>
+
+        <Style x:Key="FlatButton" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <!-- Hover effect triggers -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource HoverBackgroundColor}"/>
+                    <Setter Property="Foreground" Value="{StaticResource HoverForegroundColor}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Header Row -->
+            <RowDefinition Height="*"/>
+            <!-- Content Area -->
+            <RowDefinition Height="Auto"/>
+            <!-- Footer Row -->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <!-- Single Column -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Header -->
+        <TextBlock Text="Home" FontSize="32" FontWeight="Bold" 
+                   Foreground="{StaticResource TextColor}" 
+                   Margin="20" VerticalAlignment="Top"/>
+        <Button Content="User Info" Click="GoToMap4Page_Click" Style="{StaticResource FlatButton}" Margin="577,20,20,386"/>
+        <!-- Content Area -->
+        <Grid Margin="310,86,310,30">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="270" Width="226">
+                    <Button Content="Water Data Map" Click="GoToMapPage_Click" Style="{StaticResource FlatButton}" Height="39" Width="169"/>
+                    <Button Content="Nature Map" Click="GoToMap2Page_Click" Style="{StaticResource FlatButton}" Height="39" Width="169"/>
+                    <Button Content="Collection" Click="GoToMap5Page_Click" Style="{StaticResource FlatButton}" Height="39" Width="169"/>
+                <Button Content="Capture" Click="GoToMap3Page_Click" Style="{StaticResource FlatButton}" Height="39" Width="169"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Footer Row -->
+        <TextBlock Grid.Row="2" Text="Â© 2024 Ecosense" 
+                   FontSize="12" Foreground="{StaticResource TextColor}" 
+                   HorizontalAlignment="Center" Margin="-20" />
+        <!-- Black squares for curtain effect -->
+        <Rectangle x:Name="LeftCurtain" Fill="Black" Width="400" Height="450" HorizontalAlignment="Left" Margin="-400,0,0,0" Visibility="Hidden"/>
+        <Rectangle x:Name="RightCurtain" Fill="Black" Width="400" Height="450" HorizontalAlignment="Right" Margin="0,0,-400,0" Visibility="Hidden"/>
+    </Grid>
+</Page>
