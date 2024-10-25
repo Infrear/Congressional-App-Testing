@@ -484,3 +484,4 @@ $RECYCLE.BIN/
 *.swp
 
 Resources/Classes/MapData.cs
+# /.gitignore
